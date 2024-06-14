@@ -16,6 +16,9 @@ void RenderInterface() {
     if (showWindow) {
         RenderItemManagerInterface();
     }
+
+    // for testing purposes
+    Test::RenderTestInterface();
 }
 
 void RenderItemManagerInterface() {
@@ -43,7 +46,7 @@ void RenderItemManagerInterface() {
         
         // download button
         if (UI::Button("Download")) {
-            // TODO: download the files from github
+            DownloadPack();
             print("TODO: download files");
         }
     }
@@ -51,5 +54,6 @@ void RenderItemManagerInterface() {
 }
 
 void DownloadPack() {
+
     // TODO
 }
