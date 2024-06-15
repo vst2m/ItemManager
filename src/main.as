@@ -18,7 +18,9 @@ void RenderInterface() {
     }
 
     // for testing purposes
-    Test::RenderTestInterface();
+    if (Debug) {
+        Test::RenderTestInterface();
+    }
 }
 
 void RenderItemManagerInterface() {
