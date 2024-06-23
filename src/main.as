@@ -1,6 +1,6 @@
-Mode overrideItems = Mode::DO_NOTHING;
-string version = "11.0";
 string pluginName = "Item Manager";
+ItemManager@ manager = ItemManager();
+
 bool showWindow = false;
 
 void Main() {
@@ -14,6 +14,6 @@ void RenderMenu() {
 
 void RenderInterface() {
     if (showWindow) {
-        ItemManager::RenderItemManagerInterface();
+        manager.RenderInterface();
     }
 }
