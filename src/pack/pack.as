@@ -19,7 +19,7 @@ class ItemPack {
         this.url = url;
 
         this.mode = Mode::DO_NOTHING;
-        this.path = IO::FromUserGameFolder("items/");
+        this.path = IO::FromUserGameFolder("items/" + name + "/");
     }
 
     void SetMode(Mode mode) {
@@ -28,6 +28,10 @@ class ItemPack {
 
     void Download() {
         startnew(CoroutineFunc(this.DownloadAsync));
+    }
+
+    void Delete() {
+        IO::DeleteFolder(path, true);
     }
 
     void DownloadAsync() {
@@ -61,6 +65,19 @@ class ItemPack {
             itemRequest.SaveToFile(itemPath);
             trace("Saved item: " + itemPath);
         }
+    }
+
+    bool opEquals(ItemPack@ pack) {
+        return pack.name == this.name && pack.author == this.author && pack.version == this.version;
+    }
+
+    Json::Value@ ToJson() {
+        Json::Value@ itemPackJson = Json::Object();
+        itemPackJson["name"] = name;
+        itemPackJson["author"] = author;
+        itemPackJson["version"] = version;
+        itemPackJson["url"] = url;
+        return itemPackJson;
     }
 
 }
