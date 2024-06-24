@@ -1,7 +1,3 @@
-# NOTICE!
-
-Something broke, so downloading a pack doesn't work for now, the contents of the files are not correct
-
 # 1. About
 
 This is an Openplanet plugin written for Trackmania. It is used to download and manage itempacks.
