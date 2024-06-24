@@ -4,7 +4,7 @@ This is an Openplanet plugin written for Trackmania. It is used to download and 
 
 # 2. Features
 
-For now, only [TrackmaniaItemsSorted](https://github.com/ski-freak/TrackmaniaItemsSorted) is available for download.<br>
+For now, only [TrackmaniaItemsSorted V11](https://github.com/ski-freak/TrackmaniaItemsSorted) is available for download.<br>
 The plugin also has an auto-update feature, whenever a new update to an itempack comes out, the pack will be updated when booting trackmania.
 
 The different modes for how an item pack should be downloaded don't work yet.
