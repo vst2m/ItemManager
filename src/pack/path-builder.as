@@ -1,9 +1,10 @@
+// utility class for building a file path in a certain directory
+// thanks to XertroV for contributing this code from Dips++!
 class PathBuilder {
 
     PathBuilder() {
     }
 
-    // code from Dips++ - thanks to XertroV!
     void BuildPath(const string&in path) {
 
         auto parts = path.Split("/");
@@ -13,7 +14,6 @@ class PathBuilder {
         trace("Checking destination dir: " + dir);
 
         if (!IO::FileExists(dir) && !IO::FolderExists(dir)) {
-            // create all directories up to the file, then a directory with the name of the file
             IO::CreateFolder(dir, true);
             trace("Created folder: " + dir);
         }
