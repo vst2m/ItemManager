@@ -3,18 +3,14 @@ class ItemManager {
     string path;
     string indexUrl;
     ItemPack selectedPack;
-    Mode selectedMode;
 
     array<ItemPack@>@ packs = {};
     array<ItemPack@>@ installedPacks = {};
-
-    ModeStringConverter modeStringConverter;
 
     ItemManager() {
         this.path = IO::FromStorageFolder("");
         print(this.path);
         this.indexUrl = "https://openplanet.dev/plugin/itemmanager/config/global-index";
-        this.selectedMode = Mode::DO_NOTHING;
         startnew(CoroutineFunc(ReadIndex));
     }
 
@@ -49,18 +45,6 @@ class ItemManager {
                 }
                 UI::EndCombo();
             }
-
-            if (UI::BeginCombo("Existing items", modeStringConverter.Name(selectedMode))) {
-                for (int i = 0; i < int(Mode::XXX_Last); i++) {
-                    Mode mode = Mode(i);
-                    if (UI::Selectable(modeStringConverter.Name(mode), mode == selectedMode)) {
-                        selectedMode = mode;
-                    }
-                }
-                UI::EndCombo();
-            }
-
-            UI::Text(modeStringConverter.Description(selectedMode));
 
             if (UI::Button("Download")) {
                 DownloadPack(selectedPack);

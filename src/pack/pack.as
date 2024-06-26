@@ -8,7 +8,7 @@ class ItemPack {
     PathBuilder builder;
 
     private string path;
-    private Mode mode;
+
 
     ItemPack() {}
 
@@ -18,12 +18,7 @@ class ItemPack {
         this.version = version;
         this.url = url;
 
-        this.mode = Mode::DO_NOTHING;
         this.path = IO::FromUserGameFolder("items/" + name + "/");
-    }
-
-    void SetMode(Mode mode) {
-        this.mode = mode;
     }
 
     void Download() {
@@ -35,15 +30,6 @@ class ItemPack {
     }
 
     void DownloadAsync() {
-
-        if (mode == Mode::OVERRIDE) {
-            // delete all items in the user's items folder
-            array<string> userItems = IO::IndexFolder(path, false);
-            for (uint i = 0; i < userItems.Length; i++) {
-                // TODO
-                print(userItems[i]);
-            }
-        }
 
         Net::HttpRequest@ request = Net::HttpGet(url);
         while (!request.Finished()) {
