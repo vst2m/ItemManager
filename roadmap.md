@@ -5,6 +5,11 @@
   <li>auto-update whenever a new update comes out</li>
 </ul>
 
+# v0.1
+<ul>
+  <li>fix saving the same itempack multiple times to plugin storage itempacks.json</li>
+</ul>
+
 # v1.0 (first release)
 <ul>
   <li>upon download, choose where existing items go: delete or move to a user item folder that the plugin won't manage</li>
