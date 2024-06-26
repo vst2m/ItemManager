@@ -17,4 +17,9 @@
 <ul>
   <li>notify the user when an item pack is corrupted</li>
   <li>button to manually check if item pack is corrupted</li>
+</ul>
+
+# v2.0
+
 <ul>
+  <li>support for downloading macroblock sets the same way itemsets are managed
