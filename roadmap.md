@@ -12,7 +12,6 @@
 
 # v1.0 (first release)
 <ul>
-  <li>upon download, choose where existing items go: delete or move to a user item folder that the plugin won't manage</li>
   <li>notify the user when auto-updating</li>
   <li>instead of redownload entire pack for update, check all paths and only download files that aren't there yet and delete old files</li>
 </ul>
