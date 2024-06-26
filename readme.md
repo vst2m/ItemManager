@@ -9,6 +9,8 @@ The plugin also has an auto-update feature, whenever a new update to an itempack
 
 The different modes for how an item pack should be downloaded don't work yet.
 
+You can also view what's added and coming in the <code>roadmap.md</code> file.
+
 # 3. Future plans
 
 This plugin is still in its early stages. Future plans include macroblock pack support, other sets, managing other packs that are not available for download through the plugin, moving items around more easily, ...<br>
