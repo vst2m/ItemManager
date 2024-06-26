@@ -1,29 +1,20 @@
-## v0.0
-### v0.0
-basic UI
+# v0.0 (current)
 
-### v0.1
-design
+<ul>
+  <li>download indexed itempacks</li>
+  <li>auto-update whenever a new update comes out</li>
+</ul>
 
-### v0.2
-ability to download latest ski pack version
+# v1.0 (first release)
+<ul>
+  <li>upon download, choose where existing items go: delete or move to a user item folder that the plugin won't manage</li>
+  <li>notify the user when auto-updating</li>
+  <li>instead of redownload entire pack for update, check all paths and only download files that aren't there yet and delete old files</li>
+</ul>
 
+# v1.1 
 
-### v0.3
-ability to parse the JSON file with releases from github (this will not work, because it is a zip, solution: get all files separately)
-<br><br>
-
-## v1.0
-first release, UI update
-<br><br>
-
-## v2.0
-support for multiple versions of ski pack
-<br><br>
-
-## v3.0
-support for addons to ski pack
-<br><br>
-
-## v4.0
-support for macroblocks
+<ul>
+  <li>notify the user when an item pack is corrupted</li>
+  <li>button to manually check if item pack is corrupted</li>
+<ul>
