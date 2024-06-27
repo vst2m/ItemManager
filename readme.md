@@ -24,7 +24,7 @@ From there you can download indexed itemsets and different versions of it. There
 
 The plugin has a list of indexed itemsets. Only indexed sets are available for download through the plugin.
 
-When downloading a pack, the pack goes into <code>Trackmani/Items/[pack name]/</code>.
+When downloading a pack, the pack goes into <code>Trackmania/Items/[pack name]/</code>.
 
 Auto-updates delete the previous version and reïnstall the latest version of the pack like you would click the download button.
 
